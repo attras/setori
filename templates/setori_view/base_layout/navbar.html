@@ -1,43 +1,72 @@
 {%  load static %}
 {% block css %}
-<style>
-
-
-.ininavbar{
-    background-color:var(--green);
-    background-color: #367588;
-    font-size: 18px;
-	
-}
-
-  </style>
 {% endblock css %}
-<nav class="navbar navbar-expand-md navbar-dark ininavbar">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="{% static 'setori/img/logo/setorilogo.png' %}" alt="">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
-          <li class="nav-item mx-3">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item mx-3">
-            <a class="nav-link" href="#">Data pokok</a>
-          </li>
-          <li class="nav-item mx-3">
-            <a class="nav-link" href="#">Berita</a>
-          </li>
-          <li class="nav-item mx-3">
-            <a class="nav-link" href="#">Potensi Daerah</a>
-          </li>
-          <li class="nav-item mx-3"></li>
-            <a class="nav-link" href="#">informasi pelayanan</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+<header id="header" data-plugin-options="{'stickyScrollUp': true, 'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true,
+ 'stickyEnableOnMobile': false, 'stickyChangeLogo': false, 'stickyStartAt': 100, 'stickyHeaderContainerHeight': 100}" >
+				<div class="header-body border-top-0 h-auto box-shadow-none" style="background:#367588;">
+					<div class="container-fluid px-3 px-lg-5 p-static">
+						<div class="row align-items-center py-3">
+							<div class="col-auto col-lg-2 col-xxl-3 me-auto me-lg-0">
+								<div class="header-logo" data-clone-element-to="#offCanvasLogo">
+									<a href="demo-accounting-1.html">
+										<img alt="Logo_Setori" width="262" height="54" src="{% static 'img/icons/logo_setori/logo_setori_putih.png' %}">
+									</a>
+								</div>
+							</div>
+							<div class="col-auto col-lg-8 col-xxl-6 justify-content-lg-center">
+								<div class="header-nav header-nav-links justify-content-lg-center">
+									<div class="header-nav-main header-nav-main-text-capitalize header-nav-main-arrows header-nav-main-effect-2">
+										<nav class="collapse" >
+											<ul class="nav nav-pills" id="mainNav">
+												<li>
+													<a href="" class="nav-link"  style=" color:white;">
+														Beranda
+													</a>
+												</li>
+												
+												<li>
+													<a class="nav-link" href="" style=" color:white;">
+														Data Pokok
+													</a>
+												</li>
+												<li>
+													<a class="nav-link" href="" style=" color:white;">
+														Berita
+													</a>
+												</li>
+												<li>
+													<a class="nav-link" href="tentang_kami.php" style=" color:white;">
+														Potensi Daerah
+													</a>
+												</li>
+												<li>
+													<a class="nav-link" href="tentang_kami.php" style=" color:white;">
+														Tentang Kami
+													</a>
+												</li>
+												<li>
+													<a class="nav-link" href="tentang_kami.php" style=" color:white;">
+														Layanan
+													</a>		
+												</li>
+												<li>
+													<a class="nav-link" href="tentang_kami.php" style=" color:white;">
+														FAQ
+													</a>
+												</li>
+                                                <li>
+													<a class="nav-link" href="tentang_kami.php" style=" color:white;">
+														Kontak
+													</a>
+												</li>
+
+											</ul>
+										</nav>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</header>

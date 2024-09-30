@@ -1,8 +1,46 @@
 {% load static %}
-<footer id="footer" class="border-0 bg-light px-0 px-lg-0 pt-0 text-3"></footer>
-    <div class="border-bottom border-bottom-color-grey-100">  
+{% block css %}
+{% endblock css %}
+
+<footer id="footer" class="border-0 bg-light px-3 px-lg-5 pt-0 text-3">
+    <div class="border-bottom border-bottom-color-grey-100">
+        <div class="container">
+            <div class="row align-items-center pb-5">
+                <div class="col-lg-3">
+                    <a href="index.html">
+                        <img alt="Porto" width="131" height="27" src="{% static 'img/icons/logo_setori/logo_setori_hitam.png' %}">
+                    </a>
+                </div>
+                <div class="col-lg-9 pt-4 pt-lg-0">
+                    <div class="d-flex flex-column flex-lg-row justify-content-lg-end py-4 align-items-lg-center">
+                        <div class="pe-4">
+                            <div class="feature-box feature-box-secondary align-items-center">
+                                <div class="feature-box-icon feature-box-icon-lg p-static box-shadow-7">
+                                    <img src="img/icons/phone-2.svg" width="30" height="30" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-light'}" />
+                                </div>
+                                <div class="feature-box-info ps-2">
+                                    <strong class="d-block text-uppercase text-color-secondary p-relative top-2">Call Us</strong>
+                                    <a href="tel:1234567890" class="text-decoration-none font-secondary text-5 font-weight-semibold text-color-dark text-color-hover-primary transition-2ms negative-ls-05 ws-nowrap p-relative bottom-2">800 123 4567</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" pt-4 pt-lg-0 pe-0">
+                            <div class="feature-box feature-box-secondary align-items-center">
+                                <div class="feature-box-icon feature-box-icon-lg p-static box-shadow-7">
+                                    <img src="img/icons/email.svg" width="30" height="30" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-light'}" />
+                                </div>
+                                <div class="feature-box-info ps-2">
+                                    <strong class="d-block text-uppercase text-color-secondary p-relative top-2">Send E-mail</strong>
+                                    <a href="mailto:you@domain.com" class="text-decoration-none font-secondary text-5 font-weight-semibold text-color-dark text-color-hover-primary transition-2ms negative-ls-05 ws-nowrap p-relative bottom-2">you@domain.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="container-fluid pb-lg-4 pt-5">
+    <div class="container pb-lg-4 pt-5">
         <div class="row pt-3">
             <div class="col-lg-4">
                 <h4 class="text-color-dark font-weight-bold mb-3">Porto</h4>
@@ -109,7 +147,7 @@
         </div>
     </div>
     <div class="footer-copyright bg-transparent pb-5">
-        <div class="container-fluid">
+        <div class="container">
             <hr>
             <div class="row">
                 <div class="col-lg-6 text-center text-lg-start py-3">
