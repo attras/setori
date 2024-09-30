@@ -3,4 +3,4 @@ app_setori/media/*
 *.pyc
 *.sql
 *.sqlite3
-app_setori/migrations/*
+app_setori/migrations/**
