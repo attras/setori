@@ -1,0 +1,58 @@
+{% extends 'setori_view/base_layout/base_layout.html' %} 
+{% load static %}
+
+{% block main %} 
+
+<div class="container-fluid">
+   <div class="row justify-content-center">
+     <div class="col-md-12 g-0">
+       <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+         <div class="carousel-indicators">
+           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+         </div>
+         <div class="carousel-inner">
+           <div class="carousel-item active">
+               <img src="{% static 'setori/img/slider/image.png' %}" class="d-block w-100" alt="Slide 1">
+               <div class="carousel-caption">
+                 <img src="img/image 4.png" alt="Logo Slide 1"> <!-- Logo untuk slide 1 -->
+                 <h3>Judul Slide 1</h3>
+                 <p>Deskripsi khusus untuk slide 1. Ini bisa berbeda dari slide lainnya.</p>
+               </div>
+             </div>
+             <!-- Slide 2 -->
+             <div class="carousel-item">
+               <img src="{% static 'setori/img/slider/image.png' %}" class="d-block w-100" alt="Slide 2">
+               <div class="carousel-caption">
+                 <img src="img/image 4.png" alt="Logo Slide 2"> <!-- Logo untuk slide 2 -->
+                 <h3>Judul Slide 2</h3>
+                 <p>Deskripsi khusus untuk slide 2. Berbeda dari slide 1 dan slide 3.</p>
+               </div>
+             </div>
+             <!-- Slide 3 -->
+             <div class="carousel-item">
+               <img src="{% static 'setori/img/slider/image.png' %}" class="d-block w-100" alt="Slide 3">
+               <div class="carousel-caption">
+                 <img src="img/image 4.png" alt="Logo Slide 3"> <!-- Logo untuk slide 3 -->
+                 <h3>Judul Slide 3</h3>
+                 <p>Deskripsi khusus untuk slide 3. Ini juga berbeda dari yang lain.</p>
+               </div>
+             </div>
+         </div>
+         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Previous</span>
+         </button>
+         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Next</span>
+         </button>
+       </div>
+     </div>
+   </div>
+ </div>
+ 
+<h1>list musik</h1>
+
+{% endblock main %} 

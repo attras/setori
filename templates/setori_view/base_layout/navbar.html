@@ -1,0 +1,43 @@
+{%  load static %}
+{% block css %}
+<style>
+
+
+.ininavbar{
+    background-color:var(--green);
+    background-color: #367588;
+    font-size: 18px;
+	
+}
+
+  </style>
+{% endblock css %}
+<nav class="navbar navbar-expand-md navbar-dark ininavbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="{% static 'setori/img/logo/setorilogo.png' %}" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+          <li class="nav-item mx-3">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="#">Data pokok</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="#">Berita</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="#">Potensi Daerah</a>
+          </li>
+          <li class="nav-item mx-3"></li>
+            <a class="nav-link" href="#">informasi pelayanan</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
